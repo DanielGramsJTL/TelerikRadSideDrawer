@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TelerikXamarinApp2.Portable"
+             xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:telerikGauges="clr-namespace:Telerik.XamarinForms.DataVisualization.Gauges;assembly=Telerik.XamarinForms.DataVisualization"
+             xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+             xmlns:telerikBarcode="clr-namespace:Telerik.XamarinForms.Barcode;assembly=Telerik.XamarinForms.Barcode"
+             xmlns:telerikConversationalUI="clr-namespace:Telerik.XamarinForms.ConversationalUI;assembly=Telerik.XamarinForms.ConversationalUI"
+             x:Class="TelerikXamarinApp2.Portable.MainPage">
+    <telerikPrimitives:RadSideDrawer 
+        DrawerLength="400"
+        AreGesturesEnabled="false"
+        DrawerLocation="Bottom"
+        DrawerTransitionType="SlideInOnTop"
+        DrawerTransitionDuration="0.2"
+        IsOpen="False"
+        VerticalOptions="FillAndExpand">
+        <telerikPrimitives:RadSideDrawer.DrawerContent>
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="GreenYellow">
+                <Label Text="DrawerContent" VerticalOptions="FillAndExpand"></Label>
+            </StackLayout>
+        </telerikPrimitives:RadSideDrawer.DrawerContent>
+        <telerikPrimitives:RadSideDrawer.MainContent>
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="LightBlue" Margin="0" Padding="10">
+                <Button Text="Telerik" FontSize="Large" BackgroundColor="Orange" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </telerikPrimitives:RadSideDrawer.MainContent>
+    </telerikPrimitives:RadSideDrawer>
+</ContentPage>
